@@ -10,9 +10,7 @@ export const vidGenThumbImg = async (data) => {
 	const result = await response.blob();
 	return result;
 }
-// ({"inputs": "Astronaut riding a horse"}).then((response) => {
-// 	// Use image
-// });
+
 
 export const vidGenData = async ()=> {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts',{
