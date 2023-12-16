@@ -4,7 +4,7 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <section className="bg-black text-white">
+    <section id='features' className="bg-black text-white">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold capitalize lg:text-4xl">
           explore our awesome <span className="underline decoration-yellow-500">Features</span>

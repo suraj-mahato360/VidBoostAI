@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-black">
+    <div id='pricing' className="min-h-screen flex justify-center items-center bg-black">
       <div>
         <div className="text-center font-semibold">
           <h1 className="text-5xl">

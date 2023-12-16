@@ -1,32 +1,27 @@
-'use client';
-import { useState, useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import Link from 'next/link';
-import { vidGenData } from '@/api';
-import Hero from '@/components/Hero';
-import Footer from '@/components/Footer';
-import Features from '@/components/Features';
-import Pricing from '@/components/Pricing';
-import StarsCanvas from '@/components/StarsCanvas';
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { vidGenData } from "@/api";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
 
 export default function Home() {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
-  useEffect(()=>{
-    vidGenData().then((data)=> setData(data))
-  },[]);
+  useEffect(() => {
+    vidGenData().then((data) => setData(data));
+  }, []);
 
-  console.log(data);
+  // console.log(data);
 
   return (
-    <>
-    <StarsCanvas/>
-
-    <Navbar/>
-    <Hero/>
-    <Features/>
-    <Pricing/>
-    <Footer/>
-    </>
-  )
+    <div className="h-full w-full">
+      <div className="flex flex-col gap-20">
+        <Hero />
+        <Features />
+        <Pricing />
+      </div>
+    </div>
+  );
 }

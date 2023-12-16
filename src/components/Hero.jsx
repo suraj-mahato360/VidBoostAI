@@ -10,8 +10,8 @@ const Hero = () => {
   };
 
   return (
-    <section>
-      <div className="bg-black text-white py-4">
+    <section className="h-[80vh] bg-black">
+      <div className=" text-white py-4">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
           <motion.div
             initial="hidden"
@@ -40,7 +40,7 @@ const Hero = () => {
               variants={fadeIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              className="relative z-20 bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
             >
               Get Started
             </motion.a>
@@ -56,7 +56,7 @@ const Hero = () => {
               <motion.div variants={fadeIn}>
                 <img
                   className="inline-block mt-28 hidden xl:block"
-                  src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"
+                  src="test2.png"
                   alt="Image 1"
                 />
               </motion.div>
@@ -70,7 +70,7 @@ const Hero = () => {
               <motion.div variants={fadeIn}>
                 <img
                   className="inline-block mt-28 hidden lg:block"
-                  src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"
+                  src="test3.png"
                   alt="Image 3"
                 />
               </motion.div>
