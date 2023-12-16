@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Hero = () => {
   // Animation variants
@@ -35,7 +36,7 @@ const Hero = () => {
               Enhance your YouTube presence with intelligent algorithms, making every video a VidBoost creation!
             </motion.a>
             <motion.a
-              href="#"
+              href={'/generate'}
               variants={fadeIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
