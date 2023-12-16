@@ -14,12 +14,18 @@ const Hero = () => {
             </h2>
             <a
               href="#"
-              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 mb-4 border border-yellow-300 hover:border-transparent"
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
               voluptas consequatur maxime, doloremque beatae repellat voluptates
               cumque libero quis at, magnam quia facilis aspernatur praesentium?
               Officia tenetur sit sunt animi?
+            </a>
+            <a
+              href="#"
+              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+            >
+              Get Started
             </a>
           </div>
           <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">

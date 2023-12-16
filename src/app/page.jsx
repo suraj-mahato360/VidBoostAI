@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { vidGenData } from '@/api';
+import Hero from '@/components/Hero';
+import Footer from '@/components/Footer';
+import Features from '@/components/Features';
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -16,6 +19,9 @@ export default function Home() {
   return (
     <>
     <Navbar/>
+    <Hero/>
+    <Features/>
+    <Footer/>
     </>
   )
 }
