@@ -6,6 +6,8 @@ import { vidGenData } from '@/api';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import Features from '@/components/Features';
+import Pricing from '@/components/Pricing';
+import StarsCanvas from '@/components/StarsCanvas';
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -18,9 +20,12 @@ export default function Home() {
 
   return (
     <>
+    <StarsCanvas/>
+
     <Navbar/>
     <Hero/>
     <Features/>
+    <Pricing/>
     <Footer/>
     </>
   )

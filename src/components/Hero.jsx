@@ -63,7 +63,7 @@ const Hero = () => {
               <motion.div variants={fadeIn}>
                 <img
                   className="inline-block mt-24 md:mt-0 p-8 md:p-0"
-                  src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"
+                  src="test1.png"
                   alt="Image 2"
                 />
               </motion.div>
