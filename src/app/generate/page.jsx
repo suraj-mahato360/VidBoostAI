@@ -41,7 +41,7 @@ useEffect(() => {
       }
     })();
   }, []);
-  console.log(data.title);
+//   console.log(data.title);
 
   //Description
 //   const promptDescrip = `You are a expert youtube content writer. Provide a youtube video discription with the given input of Video title. ${title}`;
