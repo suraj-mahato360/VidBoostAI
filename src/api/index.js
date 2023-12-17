@@ -2,7 +2,7 @@ export const vidGenThumbImg = async (data) => {
 	const response = await fetch(
 		"https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
 		{
-			headers: { Authorization: `Bearer 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`},
+			headers: { Authorization: `Bearer ${process.env.hugging_face_api}`},
 			method: "POST",
 			body: JSON.stringify(data),
 		}
@@ -17,7 +17,7 @@ export const vidGenData = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${process.env.OpenAPI}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -43,7 +43,7 @@ export const vidGenDescription = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${process.env.OpenAPI}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -60,7 +60,7 @@ export const vidGenScript = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${process.env.OpenAPI}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -76,7 +76,7 @@ export const vidGenTags = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${process.env.OpenAPI}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
