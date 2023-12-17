@@ -4,7 +4,7 @@ import Pricing from './Pricing'
 
 const Navbar = () => {
   return (
-    <nav className="bg-black p-4 text-[2rem] flex justify-center mt-14 relative z-20">
+    <nav className="bg-black p-4 text-[2rem] flex justify-center mt-8 relative z-20 font-serif">
     <ul className="flex">
       <li className="mr-4 ">
         <Link href={"/"}>

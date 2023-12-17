@@ -3,15 +3,18 @@
 import React from 'react';
 
 const Features = () => {
+
   return (
+    
     <section id='features' className="bg-black text-white">
+        
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold capitalize lg:text-4xl">
           explore our awesome <span className="underline decoration-yellow-500">Features</span>
         </h1>
 
         <p className="mt-4 xl:mt-6">
-          VidBoost AI provides a one stop solution for all your YouTube needs. We help you grow your YouTube channel!
+          Vidboost AI provides a one stop solution for all your YouTube needs. We help you grow your YouTube channel!
         </p>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
@@ -31,11 +34,11 @@ const Features = () => {
             </span>
 
             {/* Title */}
-            <h1 className="text-2xl font-semibold">Elegant Dark Mode</h1>
+            <h1 className="text-2xl font-semibold">Script Generation</h1>
 
             {/* Description */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+            Quickly turn your ideas into polished YouTube scripts. Our AI analyzes your concept, identifies relevant keywords, and generates a well-structured script, saving you time and ensuring engaging content.
             </p>
 
             {/* Button */}
@@ -64,11 +67,11 @@ const Features = () => {
             </span>
 
             {/* Title */}
-            <h1 className="text-2xl font-semibold">Easy to Customizations</h1>
+            <h1 className="text-2xl font-semibold">Keyword Generation</h1>
 
             {/* Description */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+            Boost your video's discoverability with our Keyword Generation tool. By entering your idea, the AI identifies impactful keywords, optimizing your video's SEO and increasing its visibility in search results.
             </p>
 
             {/* Button */}
@@ -97,11 +100,11 @@ const Features = () => {
             </span>
 
             {/* Title */}
-            <h1 className="text-2xl font-semibold">Simple & Clean Designs</h1>
+            <h1 className="text-2xl font-semibold">Thumbnail Generation</h1>
 
             {/* Description */}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+            Enhance your video's appeal effortlessly. Our Thumbnail Generation feature designs visually striking thumbnails that capture attention and encourage clicks, eliminating the need for graphic design skills.
             </p>
 
             {/* Button */}
