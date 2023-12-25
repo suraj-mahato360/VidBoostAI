@@ -2,7 +2,7 @@ export const vidGenThumbImg = async (data) => {
 	const response = await fetch(
 		"https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
 		{
-			headers: { Authorization: `Bearer ${process.env.hugging_face_api}`},
+			headers: { Authorization: `Bearer ${process.env.NEXT_PUBLIC_HF_API}`},
 			method: "POST",
 			body: JSON.stringify(data),
 		}
@@ -17,7 +17,7 @@ export const vidGenData = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            "Authorization": `Bearer ${process.env.OpenAPI}`,
+            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_OPEN_API}`,
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -27,17 +27,10 @@ export const vidGenData = async (res)=> {
         })
     })
        const data = await response.json();
-       await storeData(data.choices[0].message.content);
-       return data;
+        const innerData =JSON.parse(data.choices[0].message.content);
+        console.log(innerData);
+       return innerData;
 }
-export const storeData = async (data) => {
-    try {
-      await localForage.setItem("myDataKey", data);
-      console.log("Data stored successfully!");
-    } catch (error) {
-      console.error("Error storing data:", error);
-    }
-  };
 
 export const vidGenDescription = async (res)=> {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
