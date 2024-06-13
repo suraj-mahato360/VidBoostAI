@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import dynamic from 'next/dynamic'
 const Card = dynamic(() => import('@/components/Card'))
 import {
-  vidGenData,
   vidGenThumbImg,
+  geminiVidGenData
 } from "@/api";
 
 const Page = () => {
@@ -14,12 +14,12 @@ const Page = () => {
   const [text, setText] = useState('');
   const [data, setData] = useState(null);
 
-  const prompt = `You are a expert youtube content writer. Provide a youtube video title, Description, Tags for increasing videos reach, and Script of video,  with the given input of Video Idea. That is the input ${text}. Give this data in JSON format for example like this {"title":"web developer tech jobs in current market", "Description":"something something", and other remaining mentioned parameters}`;
+  const prompt = `You are a expert youtube content writer. Provide a youtube video title, Description, Tags for increasing videos reach, and Script of video,  with the given input of Video Idea. That is the input ${text}. Give this data only in JSON format as output no extra text beyound json for example like this {"title":"web developer tech jobs in current market", "Description":"something something", and other remaining mentioned parameters}`;
 
 
   const generateHandle = ()=> {
     if(text.length>2){
-    vidGenData(prompt).then((data) => setData(data));
+    geminiVidGenData(prompt).then((data) => setData(data));
     }
   }
 
@@ -66,7 +66,7 @@ const Page = () => {
           </div>
           <div className="m-4">
             {data && (
-                <Card title={'Tags'} data={data.tags.join(', ')}/>
+                <Card title={'Tags'} data={data.tags}/>
               )}
           </div>
           
